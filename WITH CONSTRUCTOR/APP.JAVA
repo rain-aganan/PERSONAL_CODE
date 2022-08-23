@@ -1,50 +1,28 @@
 public class App {
     public static void main(String[] args) {
 
-        Character knight = new Character();
-
-        knight.strength = 10;
-        knight.agility = 5;
-        knight.intelligence = 0;
-        knight.name = "Chen";
+        // Creates a new object named "Knight" from Character class
+        Character knight = new Character(10, 5, 0, "Chen");
+        // Calls the sayMyName method
         knight.sayMyName();
-        knight.sayMyStrength();
         knight.sayMyAgility();
-        knight.sayMyIntelligence();
 
-
-        Character mage = new Character();
-
-        mage.strength = 0;
-        mage.agility = 5;
-        mage.intelligence = 10;
-        mage.name = "Akasha";
+        // Creates a new object named "mage" from Character class
+        Character mage = new Character(0, 5, 10, "Akasha");
+        // Calls the sayMyName method
         mage.sayMyName();
-        mage.sayMyStrength();
         mage.sayMyAgility();
-        mage.sayMyIntelligence();
 
-        Character thief = new Character();
-
-        thief.strength = 5;
-        thief.agility = 10;
-        thief.intelligence = 0;
-        thief.name = "Gondar";
+        // Creates a new object named "mage" from Character class
+        Character thief = new Character(5, 10, 0, "Gondar");
+        // Calls the sayMyName method
         thief.sayMyName();
-        thief.sayMyStrength();
         thief.sayMyAgility();
-        thief.sayMyIntelligence();
 
-        Character healer = new Character();
-
-        healer.strength = 4;
-        healer.agility = 9;
-        healer.intelligence = 9;
-        healer.name = "Zoro";
+        // Creates a new object named "healer" from Character class
+        Character healer = new Character(4, 9, 9, "Zoro");
+        // Calls the sayMyName method
         healer.sayMyName();
-        healer.sayMyStrength();
-        healer.sayMyAgility(); 
-        healer.sayMyIntelligence();
-
+        healer.sayMyAgility();
     }
 }
