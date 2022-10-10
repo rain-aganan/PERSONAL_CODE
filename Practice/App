@@ -1,0 +1,108 @@
+import java.util.Scanner;
+
+public class App {
+
+    static Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) throws Exception {
+        System.out.println("Gagohan");
+
+        System.out.print("Enter temperature in celcius: ");
+        double tempInCelcius = scan.nextDouble();
+        double tempInFahrenheit = toFahrenheit(tempInCelcius);
+        System.out.println(tempInCelcius + "°C is equal to " + tempInFahrenheit +"°F");
+       
+        System.out.println("Putangina mo");
+        
+        System.out.print("Enter the fucking temperature bitch in Farenheit: ");
+        tempInFahrenheit = scan.nextDouble();
+        tempInCelcius = toCelsius(tempInFahrenheit);
+        System.out.println(tempInFahrenheit + "°F is equal to " + tempInCelcius + "°C");
+       
+        System.out.println("Hi!Welcome to My heart");
+        
+        System.out.print("Enter your fucking Full name: ");
+        String fullname = scan.nextLine();
+        System.out.println(fullname + " yehey");
+
+        System.out.print("Enter your single no. age: ");
+        int age = scan.nextInt();
+        System.out.println(age + " bobo ");
+
+        System.out.print("enter your fucking age: ");
+        double ageInitial = scan.nextDouble();
+        double ageRest = toAgeGuy(ageInitial);
+        System.out.println(ageInitial + " is eme " + ageRest);
+
+        System.out.print("Enter your 8 student number: ");
+        String studentNumber = scan.next();
+    
+        if (studentNumber.length() == 8) { 
+            System.out.println( "valid" );
+        } else { 
+            System.out.println ( "invalid ");
+        }
+
+        System.out.print("Enter the color of the Ph flag: ");
+        String colorPHFlag = scan.next();
+
+        switch (colorPHFlag) {
+            case "red":
+                System.out.println("valid");
+                break;
+            case "Red":
+                System.out.println("valid");
+                break; 
+            case "rEd":
+                System.out.println("valid");
+                break;
+            case "reD":
+                System.out.println("valid");
+                break;     
+            case "blue":
+                System.out.println("valid");
+            case "white":
+                System.out.println("valid");
+                break;
+            case "yellow":
+                System.out.println("valid");
+                break;
+            default:
+                System.out.println("invalid");
+        }
+        
+        System.out.print("Enter MY Surname: ");
+        String surname = scan.next();
+        
+        if (surname.toLowerCase().equals("aganan") || surname.toUpperCase().equals("AGANAN")) {
+                    System.out.println("valid");
+        } else {
+                    System.out.println("invalid");
+        }
+    
+        scan.nextLine();
+        System.out.print("Use the word \"aganan\" in any sentence: ");
+        String sentence = scan.nextLine();
+
+        if (sentence.contains("aganan")) {
+            System.out.println("valid");
+        } else {
+            System.out.println("invalid");
+        }
+
+        scan.close();
+    }
+
+    static double toFahrenheit(double temperature) {
+        return (temperature * 9 / 5) + 32;
+    }
+
+    static double toCelsius(double temperature) {
+        return (temperature * 9 / 8) + 32;
+    }
+
+    static double toAgeGuy(double ageRe) {
+        return (ageRe * 2 / 4) + 56;
+    }
+    
+}
